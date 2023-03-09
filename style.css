@@ -1,0 +1,326 @@
+body {
+  margin: 0;
+  background-color: white;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ----------PAGE HEADER CSS-------------- */
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: goldenrod;
+  width: 90%;
+}
+
+.page-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: gainsboro;
+}
+
+.logged-user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  background-color: aqua;
+  height: 30px;
+  width: 200px;
+  border-radius: 25px;
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 200px;
+  height: 30px;
+  background-color: orangered;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  color: black;
+  text-transform: uppercase;
+  border-radius: 25px;
+}
+
+/* --------NAVBAR CSS----------- */
+
+.navbar-wrapper {
+  background-color: yellow;
+  width: 90%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 50px;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+  list-style: none;
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+  width: 400px;
+  height: 30px;
+  border-radius: 50px;
+}
+
+.links {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+}
+
+/* --------MAIN EMPLOYEES PAGE CSS----------- */
+
+.main-employees-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  background-color: lightgreen;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.employees-cards-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to top left, #ffb003, #ffcb03);
+}
+
+/* ADD NEW EMPLOYEE MODAL POP UP WINDOW */
+
+.modal {
+  position: fixed;
+  top: 15%;
+  left: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  align-items: center;
+  background-color: lime;
+  box-shadow: 18px 13px 8px 6px rgba(0, 0, 0, 0.5);
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  justify-self: center;
+}
+
+.modal-form label {
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.modal-form input {
+  height: 30px;
+}
+
+.modal-btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30px;
+  width: 450px;
+  margin-top: 20px;
+}
+
+.modal-edit-btn {
+  margin: 20px;
+  background-color: #ffb003;
+  text-transform: uppercase;
+}
+
+.modal-cancel-btn {
+  margin: 20px;
+  background-color: orangered;
+  text-transform: uppercase;
+}
+
+/* TABLE TASKS CSS*/
+
+.main-tasks-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  background-color: lightgreen;
+}
+
+.table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 1600px;
+}
+
+.table td {
+  border: solid 1px black;
+}
+
+.task-number {
+  width: 50px;
+  text-align: center;
+}
+
+.task-name {
+  text-align: center;
+  width: 250px;
+}
+
+.task-description {
+  width: 500pxd;
+  padding: 10px;
+  text-align: justify;
+}
+
+.task-asigned {
+  width: 300px;
+  text-align: center;
+}
+
+.task-date {
+  text-align: center;
+  width: 100px;
+}
+
+.table-buttons {
+  width: 200px;
+  text-align: center;
+}
+
+.edit-task-table-btn {
+  margin: 10px;
+  background-color: #ffb003;
+  text-transform: uppercase;
+}
+
+.delete-task-table-btn {
+  margin: 10px;
+  background-color: orangered;
+  text-transform: uppercase;
+}
+
+.add-new-task-btn-wrapper {
+  margin: 20px 0px;
+  width: 1600px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.add-new-task-btn {
+  width: 150px;
+  height: 30px;
+  background-color: limegreen;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+/* TABLE EMPLOYEES CSS*/
+
+.employee-id {
+  width: 50px;
+  text-align: center;
+}
+
+.employee-name {
+  width: 300px;
+  text-align: center;
+}
+
+.employee-email {
+  width: 300px;
+  text-align: center;
+}
+
+.employee-phone {
+  width: 150px;
+  text-align: center;
+}
+
+.employee-birth {
+  width: 100px;
+  text-align: center;
+}
+
+.employee-salary {
+  width: 100px;
+  text-align: center;
+}
+
+.add-new-employee-btn-wrapper {
+  margin: 20px 0px;
+  width: 1600px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.add-new-employee-btn {
+  width: 150px;
+  height: 30px;
+  background-color: limegreen;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.employee-edit-table-btn {
+  background-color: orange;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+.employee-delete-table-btn {
+  background-color: orangered;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s;
+}

@@ -1,0 +1,190 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Emplyees App</title>
+  </head>
+  <body>
+    <!-- Page header for Logo and logged account -->
+
+    <div class="container">
+      <div class="page-header">
+        <div class="page-header-wrapper">
+          <div class="logo">company logo</div>
+          <div class="logged-user">manager account</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation bar -->
+
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-wrapper">
+          <ul class="navbar-menu">
+            <li class="list">
+              <a href="#" class="links">Employees</a>
+            </li>
+            <li class="list">
+              <a href="#" class="links">Tasks</a>
+            </li>
+            <li class="list">
+              <a href="#" class="links">Work Status</a>
+            </li>
+            <li class="list">
+              <a href="#" class="links">Top 5 employees</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main section for employees page -->
+
+    <!--  TABLE EMPLYEES -->
+
+    <main class="container">
+      <div class="main-employees-wrapper">
+        <h1 class="title">Emplyees</h1>
+        <table class="table">
+          <thead class="table-head">
+            <tr>
+              <th>Id</th>
+              <th>Full Name</th>
+              <th>Email</th>
+              <th>Phone №</th>
+              <th>Date of Birth</th>
+              <th>Monthly Salary</th>
+              <th>Edit / Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="employee-id">1</td>
+              <td class="employee-name">Nikolai Kolev Ivanov</td>
+              <td class="employee-email">nikolai.kolev@info.bg</td>
+              <td class="employee-phone">0893887384</td>
+              <td class="employee-birth">03.22.2023</td>
+              <td class="employee-salary">2000</td>
+              <td class="table-buttons">
+                <button class="employee-edit-table-btn">Edit</button>
+                <button class="employee-delete-table-btn">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="add-new-employee-btn-wrapper">
+          <button class="add-new-employee-btn">Add new employee</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- ---- MODAL POP UP WINDOW TO ADD NEW EMPOYEE ---- -->
+
+    <div class="add-employee modal hidden">
+      <h2 class="secondary-title">Add new employee</h2>
+      <form class="modal-form">
+        <label>Name:</label>
+        <input type="text" />
+        <label>Email:</label>
+        <input type="email" />
+        <label>Phone:</label>
+        <input type="number" />
+        <label>Date of Birth:</label>
+        <input type="date" />
+        <label>Month Salary:</label>
+        <input type="number" />
+        <div class="modal-btns">
+          <button class="add-new-employee-btn">add</button>
+          <button class="cancel-btn">cancel</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- ---- MODAL POP UP WINDOW TO EDIT EMPOYEE ---- -->
+
+    <div class="edit-employee modal hidden">
+      <h2 class="secondary-title">Edit employee</h2>
+      <form class="modal-form">
+        <label>Name:</label>
+        <input type="text" />
+        <label>Email:</label>
+        <input type="email" />
+        <label>Phone:</label>
+        <input type="number" />
+        <label>Date of Birth:</label>
+        <input type="date" />
+        <label>Month Salary:</label>
+        <input type="number" />
+        <div class="modal-btns">
+          <button class="modal-edit-btn">edit</button>
+          <button class="modal-cancel-btn">cancel</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Main section for tasks page -->
+
+    <!--  TABLE TASKS -->
+
+    <main class="container hidden">
+      <div class="main-tasks-wrapper">
+        <h1 class="title">Tasks</h1>
+        <table class="table">
+          <thead class="table-head">
+            <tr>
+              <th>Task №</th>
+              <th>Task name</th>
+              <th>Task description</th>
+              <th>Assigned to</th>
+              <th>Due Date</th>
+              <th>Edit / Delete</th>
+            </tr>
+          </thead>
+          <tbody class="table-body">
+            <tr>
+              <td class="task-number">1</td>
+              <td class="task-name">Make a delete button</td>
+              <td class="task-description">
+                Make a delete button on the menu with users that have to be 150
+                pixels wide and 30 pixels height. For color you can choose
+                between red and orange red. It has to delete the selected user
+              </td>
+              <td class="task-asigned">Nikolai Kolev Ivanov</td>
+              <td class="task-date">03.22.2023</td>
+              <td class="table-buttons">
+                <button class="edit-task-table-btn">Edit</button>
+                <button class="delete-task-table-btn">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="add-new-task-btn-wrapper">
+          <button class="add-new-task-btn">Add new task</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- ---- MODAL POP UP WINDOW TO EDIT EMPOYEE ---- -->
+
+    <div class="tasks-modal hidden">
+      <h2 class="secondary-title">Edit task</h2>
+      <form class="modal-form">
+        <label>Task Name:</label>
+        <input type="text" />
+        <label>Task Description:</label>
+        <input type="email" />
+        <label>Assigned to:</label>
+        <input type="text" />
+        <label>Due Date:</label>
+        <input type="date" />
+        <div class="modal-btns">
+          <button class="edit-task-btn">edit</button>
+          <button class="cancel-task-btn">cancel</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
