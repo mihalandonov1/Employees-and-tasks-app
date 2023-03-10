@@ -120,57 +120,6 @@ body {
 
 /* ADD NEW EMPLOYEE MODAL POP UP WINDOW */
 
-.modal {
-  position: fixed;
-  top: 15%;
-  left: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 500px;
-  align-items: center;
-  background-color: lime;
-  box-shadow: 18px 13px 8px 6px rgba(0, 0, 0, 0.5);
-}
-
-.modal-form {
-  display: flex;
-  flex-direction: column;
-  width: 450px;
-  justify-self: center;
-}
-
-.modal-form label {
-  margin: 10px;
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.modal-form input {
-  height: 30px;
-}
-
-.modal-btns {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 30px;
-  width: 450px;
-  margin-top: 20px;
-}
-
-.modal-edit-btn {
-  margin: 20px;
-  background-color: #ffb003;
-  text-transform: uppercase;
-}
-
-.modal-cancel-btn {
-  margin: 20px;
-  background-color: orangered;
-  text-transform: uppercase;
-}
-
 /* TABLE TASKS CSS*/
 
 .main-tasks-wrapper {
@@ -309,8 +258,67 @@ body {
   margin: 10px;
 }
 
+/* ------ -------MODAL CSS --------- */
+
+.modal {
+  position: fixed;
+  top: 15%;
+  left: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  align-items: center;
+  background-color: lime;
+  box-shadow: 18px 13px 8px 6px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  justify-self: center;
+}
+
+.modal-form label {
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.modal-form input {
+  height: 30px;
+}
+
+.modal-btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30px;
+  width: 450px;
+  margin-top: 20px;
+}
+
+.modal-edit-btn {
+  margin: 20px;
+  background-color: #ffb003;
+  text-transform: uppercase;
+}
+
+.modal-cancel-btn {
+  margin: 20px;
+  background-color: orangered;
+  text-transform: uppercase;
+}
+
 .hidden {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal-visible {
+  display: flex;
 }
 
 .overlay {

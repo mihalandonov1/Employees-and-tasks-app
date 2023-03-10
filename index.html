@@ -43,14 +43,14 @@
 
     <!-- Main section for employees page -->
 
-    <!--  TABLE EMPLYEES -->
+    <!--  TABLE EMPLOYEES -->
 
     <main class="container">
       <div class="main-employees-wrapper">
-        <h1 class="title">Emplyees</h1>
+        <h1 class="title">Employees</h1>
         <table class="table">
           <thead class="table-head">
-            <tr>
+            <tr class="table-row">
               <th>Id</th>
               <th>Full Name</th>
               <th>Email</th>
@@ -60,70 +60,13 @@
               <th>Edit / Delete</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td class="employee-id">1</td>
-              <td class="employee-name">Nikolai Kolev Ivanov</td>
-              <td class="employee-email">nikolai.kolev@info.bg</td>
-              <td class="employee-phone">0893887384</td>
-              <td class="employee-birth">03.22.2023</td>
-              <td class="employee-salary">2000</td>
-              <td class="table-buttons">
-                <button class="employee-edit-table-btn">Edit</button>
-                <button class="employee-delete-table-btn">Delete</button>
-              </td>
-            </tr>
-          </tbody>
+          <tbody class="table-body"></tbody>
         </table>
         <div class="add-new-employee-btn-wrapper">
           <button class="add-new-employee-btn">Add new employee</button>
         </div>
       </div>
     </main>
-
-    <!-- ---- MODAL POP UP WINDOW TO ADD NEW EMPOYEE ---- -->
-
-    <div class="add-employee modal hidden">
-      <h2 class="secondary-title">Add new employee</h2>
-      <form class="modal-form">
-        <label>Name:</label>
-        <input type="text" />
-        <label>Email:</label>
-        <input type="email" />
-        <label>Phone:</label>
-        <input type="number" />
-        <label>Date of Birth:</label>
-        <input type="date" />
-        <label>Month Salary:</label>
-        <input type="number" />
-        <div class="modal-btns">
-          <button class="add-new-employee-btn">add</button>
-          <button class="cancel-btn">cancel</button>
-        </div>
-      </form>
-    </div>
-
-    <!-- ---- MODAL POP UP WINDOW TO EDIT EMPOYEE ---- -->
-
-    <div class="edit-employee modal hidden">
-      <h2 class="secondary-title">Edit employee</h2>
-      <form class="modal-form">
-        <label>Name:</label>
-        <input type="text" />
-        <label>Email:</label>
-        <input type="email" />
-        <label>Phone:</label>
-        <input type="number" />
-        <label>Date of Birth:</label>
-        <input type="date" />
-        <label>Month Salary:</label>
-        <input type="number" />
-        <div class="modal-btns">
-          <button class="modal-edit-btn">edit</button>
-          <button class="modal-cancel-btn">cancel</button>
-        </div>
-      </form>
-    </div>
 
     <!-- Main section for tasks page -->
 
@@ -143,7 +86,7 @@
               <th>Edit / Delete</th>
             </tr>
           </thead>
-          <tbody class="table-body">
+          <tbody class>
             <tr>
               <td class="task-number">1</td>
               <td class="task-name">Make a delete button</td>
@@ -166,25 +109,53 @@
         </div>
       </div>
     </main>
+    <div class="newClass"></div>
 
     <!-- ---- MODAL POP UP WINDOW TO EDIT EMPOYEE ---- -->
 
-    <div class="tasks-modal hidden">
-      <h2 class="secondary-title">Edit task</h2>
+    <!-- ---- MODAL POP UP WINDOW TO ADD NEW EMPOYEE ---- -->
+
+    <div class="modal hidden">
+      <button class="modal-cancel-btn">&times;</button>
+      <h2 class="modal-header">Add Employee</h2>
       <form class="modal-form">
-        <label>Task Name:</label>
+        <label>Full Name</label>
         <input type="text" />
-        <label>Task Description:</label>
+        <label>Email Adress</label>
         <input type="email" />
-        <label>Assigned to:</label>
-        <input type="text" />
-        <label>Due Date:</label>
+        <label>Phone:</label>
+        <input type="number" />
+        <label>Birth:</label>
         <input type="date" />
-        <div class="modal-btns">
-          <button class="edit-task-btn">edit</button>
-          <button class="cancel-task-btn">cancel</button>
-        </div>
+        <label>Salary:</label>
+        <input type="number" />
+        <button class="modal-edit-btn">Add</button>
       </form>
     </div>
+    <div class="overlay hidden"></div>
+
+    <!-- ---- MODAL POP UP WINDOW TO EDIT EMPOYEE ---- -->
+
+    <!-- <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">Add Employee</h2>
+      <form class="modal__form">
+        <label>Full Name</label>
+        <input type="text" />
+        <label>Email Adress</label>
+        <input type="email" />
+        <label>Phone:</label>
+        <input type="number" />
+        <label>Birth:</label>
+        <input type="date" />
+        <label>Salary:</label>
+        <input type="number" />
+        <button class="btn">Edit</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div> -->
+
+    <!-- ////////////////////////////////////////////////////// -->
   </body>
+  <script type="module" src="./main.js"></script>
 </html>

@@ -1,0 +1,84 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Ivan Petrov",
+      "email": "ivan.petrov@info.bg",
+      "phone": 893992233,
+      "birth": "23/01/1991",
+      "salary": 2000
+    },
+    {
+      "id": 2,
+      "name": "Petar Ivanov",
+      "email": "petar.ivanov@info.bg",
+      "phone": 893393333,
+      "birth": "02/01/1990",
+      "salary": 2200
+    },
+    {
+      "id": 3,
+      "name": "Svetlio Gochev",
+      "email": "svetlio.gochev@info.bg",
+      "phone": 893943833,
+      "birth": "08/09/1988",
+      "salary": 1800
+    },
+    {
+      "id": 4,
+      "name": "Nikolai Stefanov",
+      "email": "nikolai.stefanov@info.bg",
+      "phone": 893846037,
+      "birth": "28/03/1993",
+      "salary": 2100
+    },
+    {
+      "id": 5,
+      "name": "Kiril Kirilov",
+      "email": "kiril.kirilov@info.bg",
+      "phone": 878339754,
+      "birth": "13/09/1985",
+      "salary": 2500
+    },
+    {
+      "id": 6,
+      "name": "Petko Petev",
+      "email": "petko.petev@info.bg",
+      "phone": 877938405,
+      "birth": "18/04/1993",
+      "salary": 2700
+    },
+    {
+      "id": 7,
+      "name": "Stamen Stamenov",
+      "email": "stamen.stamenov@info.bg",
+      "phone": 887239678,
+      "birth": "03/11/1987",
+      "salary": 2800
+    },
+    {
+      "id": 8,
+      "name": "Iveta Ivanova",
+      "email": "iveta.ivanova@info.bg",
+      "phone": 893208677,
+      "birth": "19/08/1990",
+      "salary": 2200
+    },
+    {
+      "id": 9,
+      "name": "Dilqna Vaskova",
+      "email": "dilqna.vaskova@info.bg",
+      "phone": 888009345,
+      "birth": "23/01/1984",
+      "salary": 2900
+    },
+    {
+      "id": 10,
+      "name": "Simona Gocheva",
+      "email": "simona.gocheva@info.bg",
+      "phone": 893229387,
+      "birth": "30/06/1983",
+      "salary": 3000
+    }
+  ]
+}
